@@ -1,0 +1,11 @@
+{
+  "name": "com.sharif.tessamock",
+  "version": "1.0.0",
+  "description": "make sure you have changed all extention id `com.sharif.boilerplate`",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
