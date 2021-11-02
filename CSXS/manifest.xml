@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- 1) -->
+<ExtensionManifest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ExtensionBundleId="com.sharif.tessamock"
+                   ExtensionBundleVersion="1.0.0" Version="9.0">
+    <ExtensionList>
+        <!-- 2) -->
+        <Extension Id="com.sharif.tessamock.panel" Version="1.0.0"/>
+    </ExtensionList>
+    <ExecutionEnvironment>
+        <HostList>
+            <!-- 3) -->
+            <Host Name="PHSP" Version="20"/>
+            <Host Name="PHXS" Version="20"/>
+            <Host Name="PPRO" Version="14"/>
+            <Host Name="IDSN" Version="13" />
+        </HostList>
+        <LocaleList>
+            <Locale Code="All"/>
+        </LocaleList>
+        <RequiredRuntimeList>
+            <RequiredRuntime Name="CSXS" Version="9.0"/>
+        </RequiredRuntimeList>
+    </ExecutionEnvironment>
+    <DispatchInfoList>
+        <!-- 2) -->
+        <Extension Id="com.sharif.tessamock.panel">
+            <DispatchInfo>
+                <Resources>
+                    <!-- 4) -->
+                    <MainPath>./index.html</MainPath>
+                    <!-- 5) -->
+                    <ScriptPath>./jsx/index.jsx</ScriptPath>
+                    <CEFCommandLine/>
+                </Resources>
+                <Lifecycle>
+                    <AutoVisible>true</AutoVisible>
+                </Lifecycle>
+                <UI>
+                    <Type>Panel</Type>
+                    <!-- 6) -->
+                    <Menu>CEP tessamock</Menu>
+                    <Geometry>
+                        <Size>
+                            <!-- 7) -->
+                            <Height>500</Height>
+                            <Width>350</Width>
+                        </Size>
+                    </Geometry>
+                    <Icons/>
+                </UI>
+            </DispatchInfo>
+        </Extension>
+    </DispatchInfoList>
+</ExtensionManifest>
